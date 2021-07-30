@@ -1,10 +1,13 @@
 
+
 <a href="/todo/index.php/board/lists"><h1>메인 페이지이동</h1></a>
 
 <div class="container" id="main">
 	<div class="col-md-6 col-md-offset-3">
-			<div class="panel panel-default content-main">
+		<div class="panel panel-default content-main">
 			<form autocomplete="off" action="/todo/index.php/auth/login" method="post">
+
+				<p style="color: red">사용자아이디/패스워드가 회원가입한 정보가 아닙니다!</p>
 
 				<div class="form-group">
 					<label>사용자 아이디</label>

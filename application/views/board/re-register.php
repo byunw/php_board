@@ -59,7 +59,8 @@
 
 			setTimeout(function(){
 				alert("비빌번호랑 확인비빌번호랑 같아야합니다!");
-			}, 100)
+			},0).
+
 
 		}
 
@@ -82,8 +83,8 @@
 
 			<div class="control-group">
 
-				<p style="color: red">사용가능한 아이디를 입력하시고 첫번째 비빌번호랑 확이비빌번호랑 동일하게 입력 부탁드립니다!</p>
-
+				<p style="color: red">모든 필드를 채우고 중복되지않은 아이디를 사용하고 비빌번호랑 확일비빌번호랑 같아야됩니다!</p>
+				
 				<label class="control-label" for="input01">사용자 아이디</label>
 				<div class="controls">
 					<input type="text" class="input-xlarge" id="user_id" name="userid">

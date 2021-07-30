@@ -3,8 +3,10 @@
 
 <div class="container" id="main">
 	<div class="col-md-6 col-md-offset-3">
-			<div class="panel panel-default content-main">
+		<div class="panel panel-default content-main">
 			<form autocomplete="off" action="/todo/index.php/auth/login" method="post">
+
+				<p style="color: red">로그인시 사용자아이디랑 패스워드 둘다 입력하셔야됩니다!</p>
 
 				<div class="form-group">
 					<label>사용자 아이디</label>

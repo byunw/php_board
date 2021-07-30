@@ -58,7 +58,8 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array();
+//이 코드때문에 codeigniter가 로드될떄 세션 라이브러리가 로딩됨
+$autoload['libraries'] = array('database','session');
 
 /*
 | -------------------------------------------------------------------

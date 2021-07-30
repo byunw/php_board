@@ -20,14 +20,24 @@
 					"userid_value":userid
 				},
 
+				//서버에서 보내는 데이터가 data의 값으로
 				success:function(data){
 
+					//중복아닌 아이디
 					if(data==0){
 						alert('사용가능한 아이디입니다!');
 					}
 
+					//중복아이디일경우
 					else{
-						alert('중복아이디입니다.다른아이디 사용 부탁드립니다!');
+
+						document.getElementById('user_id').value="";
+
+						setTimeout(function(){
+							alert('중복아이디입니다.다른아이디 사용 부탁드립니다!');
+						},0)
+
+
 					}
 
 				}
@@ -67,9 +77,8 @@
 		else{
 			alert("패스워드체크 성공!");
 		}
-		
-
 	}
+
 </script>
 
 <a href="/todo/index.php/board/lists"><h1>메인 페이지</h1></a>
